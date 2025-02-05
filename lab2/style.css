@@ -1,0 +1,33 @@
+
+body {
+   text-align: center;
+}
+.dark-mode {
+    background-color: rgb(48, 44, 44);
+    color: white;
+    text-align: center;
+}
+button {
+    background-color: antiquewhite;
+    border-style: none;
+    border-radius: 5px;
+    padding:8px
+}
+ul {
+    text-align: center; 
+    padding: 0; 
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    color:white;
+    background-color: rgb(151, 58, 58);
+    border-radius: 5px;
+    padding: 2px;
+    text-decoration: none;
+    margin-top: 10px;
+ 
+}
+
