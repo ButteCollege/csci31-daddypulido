@@ -7,19 +7,48 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Alexander Pulido">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #current-pre-tag {
+            font-size: 30px;
+        }
+        .green{
+            background-color: #00ff00;
+            
+        }
+        .red {
+            background-color: #ff0000;
+           
+
+        }
+        .blue {
+            background-color: #0000ff;
+           
+
+        }
+        div {
+        border: 5px solid #333333;
+        padding: 5px;
+        margin: 10px;
+        }
+        span {
+            margin: 20px;
+            border: 5px solid;
+            padding: 2px;
+        }
+    </style>
     <title>Home</title>
 </head>
 <body>
     <button id="themeToggle">Toggle Dark Mode</button>
-    <pre>console.log('hello world')</pre>
+    <pre id="current-pre-tag">console.log('hello world')</pre>
     <hr>
-    <div>This is block one</div>
-    <div>This is block two</div>
-    <div>this is block three</div>
+    <div class="red">This is block one</div>
+    <div class="blue">This is block two</div>
+    <div class="green">this is block three</div>
 
-    <span>This is inline one</span>
-    <span>This is inline two</span>
-    <span>This is inline three</span>
+    <span class="red">This is inline one</span>
+    <span class="blue">This is inline two</span>
+    <span class="green">This is inline three</span>
     <hr>
     <span>5 &lt; 10</span>
     <span>100 &gt; 10</span>
@@ -36,6 +65,7 @@
         </ul>
     </div>
     <a href="./about.html">About me</a>
+    <a href="favorite.html">Favorite Page</a>
     <script src="script.js"></script>
 
 </body>

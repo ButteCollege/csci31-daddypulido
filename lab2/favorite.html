@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Alexander Pulido">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+           background-color:  #c6e4e4;
+        }
+        #current-pre-tag {
+            font-size: 30px;
+        }
+        .light-blue {
+            background-color: rgb(85, 170, 170);
+        }
+        .light-blue:hover {
+            opacity: 50%;
+            cursor: pointer;
+        }
+
+        .inline-span {
+            background-color: #065f5f;
+        }
+        div {
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+        }
+        span {
+            margin: 20px;
+            padding: 8px;
+        border-radius: 10px;
+        }
+        span:hover {
+            opacity: 50%;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .cell{
+            background-color: #083f3f;
+            width: 300px;
+        }
+        .cell:hover {
+            background-color: #065f5f;
+            cursor: pointer;
+            transform: scale(1.10);
+            transition: transform 0.3s ease-in-out;
+        }
+       
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <button id="themeToggle">Toggle Dark Mode</button>
+    <pre id="current-pre-tag">console.log('hello world')</pre>
+    <hr>
+    <div class="light-blue">This is block one</div>
+    <div class="light-blue">This is block two</div>
+    <div class="light-blue">this is block three</div>
+
+    <span class="inline-span">This is inline one</span>
+    <span class="inline-span">This is inline two</span>
+    <span class="inline-span">This is inline three</span>
+    <br>
+    <br>
+    <hr>
+    <span>5 &lt; 10</span>
+    <span>100 &gt; 10</span>
+    <span>&copy; Chico Customs Labs</span>
+    <hr>
+    
+    <div class="container">
+        <div class="cell">
+            <h1>The Beauty of Blues and Teals</h1>
+           <p>Colors have a way of setting the mood, and the shades of blue-green I’ve chosen for this design bring a fresh,
+             modern, and calming vibe. Whether it’s the soft background or the deeper accent shades,
+              every color plays a role in making the page feel balanced and inviting.
+           </p>
+        </div>
+        <div class="cell">
+            <h1>A Breath of Fresh Air</h1>
+           <p>The light aqua background (#c6e4e4) is like a soft breeze—it keeps things airy and easy on the eyes.
+             It’s the perfect foundation for a design that feels open and refreshing, almost like a coastal morning.
+           </p>
+        </div>
+        <div class="cell">
+            <h1>The Perfect Contrast</h1>
+            <p>To add structure and contrast, I used deep teals (#065f5f and #083f3f) for elements like buttons and divs. 
+                These shades are rich, strong, and give the design a bit of depth without being too harsh.
+                 They stand out just enough while still blending harmoniously with the background.</p>
+        </div>
+
+        <div class="cell">
+            <h1>A Splash of Personality</h1>
+            <p>The muted teal rgb(85, 170, 170) brings a little extra character. It’s noticeable, but not overwhelming—just enough to grab attention. 
+                And with hover effects that soften the colors, everything feels interactive and dynamic.
+            </p>
+        </div>
+
+    </div>
+  
+    <a href="./index.html">Home</a>
+    <script src="script.js"></script>
+
+</body>
+</html>

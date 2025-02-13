@@ -23,11 +23,17 @@ li {
 
 a {
     color:white;
-    background-color: rgb(151, 58, 58);
+    background-color: #065f5f;
     border-radius: 5px;
-    padding: 2px;
+    padding: 10px;
     text-decoration: none;
     margin-top: 10px;
- 
+    display: inline-block;
+   
+
+}
+a:hover {
+    transform: scale(1.05);
+    transition: transform 0.06s ease-in-out;
 }
 
