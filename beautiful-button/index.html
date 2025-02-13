@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+
+@keyframes tilt {
+          0% { transform: rotate(-3deg) scale(1.1); }
+          100% { transform: rotate(3deg) scale(1.1); }
+        }
+        body {
+          background-color: #774e46;
+          color: white;
+        }
+        button {
+          padding: 6px 12px;
+          color: #fef3c7 ;
+          background: #d97706;
+          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 
+                      0 2px 4px -2px rgb(0 0 0 / 0.1);
+          border-radius: 3px;
+          cursor: pointer;
+          transition: background .15s ease-in;
+        }
+        button:hover {
+            background:#b45309;
+           
+           
+
+        }
+        button:active {
+          background: #92400e;
+         
+
+        }
+     
+        .container {
+        display: flex;
+       justify-content: space-between;
+      width: 100%;
+        }
+        .button-container{
+          background-color: blue;
+          width: 300px;
+          height: 400px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 10px;
+          border-radius: 10px;
+          opacity: 80%;
+        }
+        .submit2{
+          background: #b40909;
+          color: #fef3c7;
+          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 
+              0 2px 4px -2px rgb(0 0 0 / 0.1);
+          border-radius: 8px;
+          font-size: 16px;
+          border: none;
+          transition: all 0.3s ease-in-out;
+        }
+        .submit2:hover {
+          transform: scale(1.1);
+          background: linear-gradient(135deg, #c2410f, #774e46);
+          animation: tilt 0.5s ease-in-out infinite alternate;
+        }
+        .submit3 {
+          color: rgb(4, 8, 7);
+          background-color: aliceblue;
+          font-size: 20px;
+          border: none;
+          border-radius: 5px;
+          transition: all 0.5s ease-in-out;
+        }
+        .submit3:hover {
+          transform: scale(1.1);
+         background: antiquewhite;
+         opacity: 40%;
+        }
+        .submit3:active {
+         opacity: 100%;
+         transition: all 0.1s ease-in-out;
+        }
+        .submit4 {
+          color: rgb(4, 8, 7);
+          background-color: aliceblue;
+          font-size: 10px;
+          border: none;
+          border-radius: 5px;
+          transition: all 0.5s ease-in-out;
+        }
+        .submit4:hover {
+          transform: scale(1.8);
+         background: rgb(199, 21, 184);
+       
+        }
+        .submit4:active {
+          transform: scale(1);
+          transition: all 0.1s ease-in-out;
+          background: pink;
+        }
+        p {
+          color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 style="text-align: center;">We will create multiple buttons with different affect</h1>
+      
+     
+       
+          <div class="container">
+            <div class="button-container">
+              <p >This is the button that you assigned us.</p>
+              <button>Submit</button>
+              <p>This button was kept like you asked</p>
+            </div>
+            <div class="button-container">
+              <p >This is just a custom button</p>
+              <button class="submit2">Submit 2</button>
+              <p>This one has a tilt animation,gradient, and scale applied to it</p>
+            </div>
+            <div class="button-container">
+              <p >This is just a custom button</p>
+              <button class="submit3">Submit 3</button>
+              <p>This button has only scale and opacity applied to it </p>
+            </div>
+            <div class="button-container">
+              <p>This is just a custom button</p>
+              <button class="submit4">Submit 4</button>
+              <p>This last button I made it smaller and scale when hovering and back to small when clicked</p>
+            </div>
+          </div>
+
+
+          <h2 style="text-align: center;">In this project I used some inline css as well. Just a mixure of two to showcase understanding of CSS</h2>
+       
+        
+     
+    </main>
+  <script src="index.js"></script>
+  </body>
+</html>
