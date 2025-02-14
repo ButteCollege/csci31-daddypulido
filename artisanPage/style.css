@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(212, 182, 146);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(23, 23, 54);
+    color: white;
+    padding: 15px;
+    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.4);
+}
+.header-leftside {
+    font-size: 30px;
+}
+.header-rightside {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    opacity: 50%;
+}
+.welcoming-sentence {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+
+}
+.pottery-pictures{
+    width: 200px;
+    height: 200px;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: bisque;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.image-container:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+   
+}
+.message {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(23, 23, 54);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ .journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+ }
+ #story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    gap: 10px;
+ }
+
+ .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    
+ }
+
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 10px;
+    color:#291347 ;
+ }
