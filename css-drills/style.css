@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+div:first-child {
+    text-align: left;
+    margin-top:20px;
+    
+}
+
+.second-div {
+   text-align: right;
+   margin-top:20px;
+
+}
+.second-div:hover {
+    color:green;
+    cursor: pointer;
+}
+div:nth-of-type(3) {
+    text-align: center;
+    margin-top:20px;
+    color:red;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.3) 0%, rgba(255, 0, 0, 0) 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-in-out;
+}
+div:nth-of-type(3):hover {
+ background-size: 100% 100%;
+ cursor: pointer;
+}
+div:nth-of-type(4) {
+    text-align: justify;
+    margin-top:20px;
+    color:blue;
+    background: linear-gradient(to bottom, rgba(9, 143, 15, 0.452) 0%, rgba(8, 164, 255, 0.336) 100%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-in-out;
+}
+div:nth-of-type(4):hover{
+    cursor: pointer;
+    background-size: 100% 0%;
+}
+div:nth-of-type(5) {
+    width: 500px;
+    margin: 0 auto;
+    color: green;
+    
+}
+div:nth-child(6) {
+    rotate: 20deg;
+    background-color: aquamarine;
+    width: 500px;
+    height: 100;
+    margin: 100px;
+    
+}
+div:nth-child(7) {
+  scale: 1.5;
+  background-color: purple;
+    width: 400px;
+    height: 200px;
+    margin: 200px;
+    text-align: center;
+}
+div:nth-child(8) {
+    scale: .75;
+    background-color: rgb(27, 147, 184);
+      width: 400px;
+      height: 200px;
+      margin: 200px;
+      text-align: center;
+      
+  }
+  div:nth-child(9){
+    background-color: tan;
+    width: 800px;
+    height: 200px;
+    margin: 50px;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+  }
+  div:nth-child(9):hover{
+    background-color: pink;
+    cursor: pointer;
+  }
+  .last-child {
+    background-color: brown;
+    width: 600px;
+    height: 200px;
+    transform: skew(20deg,10deg);
+    margin:50px
+  }
+  a:link {
+    color:aqua
+  }
+  a:visited {
+    color:purple
+  }
+  a:hover {
+    color:red;
+  }
+  a:active {
+    color:green
+  }
+
+
+.outer {
+width: 100%;
+position: relative;
+height: 300px;
+width: 200px;
+margin: 10px;
+padding: 50px;
+border: 5px solid red;
+background-color: rgb(238, 238, 231);
+}
+.inner {
+    background-color: rgb(226, 223, 218);
+    height: 200px;
+    width: 200px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+   text-align: center;
+   border: 3px solid blue;
+   padding: 10px;
+}
