@@ -1,0 +1,39 @@
+.inner {
+    padding: 12px;
+  }
+  .inner:nth-child(1) {
+    background: blue
+  } 
+  .inner:nth-child(2) {
+    background: green
+  } 
+  .inner:nth-child(3) {
+    background: pink
+  } 
+
+  .outer {
+    display: flex;
+    gap: 12px;
+    background: #DDDDDD; 
+    padding: 12px 24px;
+  }
+
+  .justify-end {
+    justify-content: flex-end;
+  } 
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  } 
+  .items-center {
+    justify-content: center;
+  } 
