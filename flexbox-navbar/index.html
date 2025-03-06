@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox-navbar</title>
+    <style>
+        * {
+            margin: 0; 
+        }
+        .nav {
+            background-color: rgb(108, 172, 172);
+            padding:10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+         button {
+          padding: 6px 12px;
+          color: #fef3c7 ;
+          background: #d97706;
+          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 
+                      0 2px 4px -2px rgb(0 0 0 / 0.1);
+          border-radius: 3px;
+          cursor: pointer;
+          transition: .15s ease-in;
+        }
+        button:hover {
+            background:#b45309;
+           
+           
+
+        }
+        button:active {
+          background: #7e5c47;
+         
+
+        }
+        .mock-logo {
+        padding: 20px;
+        border-radius: 50%;
+        background: rgb(128, 67, 67);
+        transition: transform .15s ease-in;
+        }
+        .mock-logo:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .button-container {
+            display: flex;
+            gap: 12px;
+        }
+        ul {
+            display:flex;
+            gap: 15px
+        }
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <navbar class="nav">
+      <div class="mock-logo"></div>
+      <div class="button-container">
+        <ul>
+            <li><a href="https://www.facebook.com"><button class="submit">Facebook</button></a></li>
+            <li><a href="https://www.Youtube.com"><button class="submit">Youtube</button></a></li>
+        </ul>
+        <!-- <button class="submit">Submit</button>
+        <button class="submit">Submit</button> -->
+      </div>
+    </navbar>
+</body>
+</html>
