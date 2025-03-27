@@ -6,6 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
+        function createCardHTML(image, title) {
+            return ` <div
+                    class="flex-grow w-96 bg-stone-50 flex flex-col rounded-lg shadow-lg cursor-pointer  hover:scale-105 transition-all ">
+                    <img class="rounded-t-lg"
+                        src= ${image}
+                        alt="Norway">
+                    <div class="flex flex-col gap-y-4 px-8 py-6">
+                        <h2 class="text-xl font-bold">${title}</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis atque perspiciatis
+                            consectetur
+                            cumque
+                            id deserunt ex repellendus odit! Vero earum culpa labore magnam aliquam quis impedit
+                            necessitatibus
+                            eveniet debitis autem.</p>
+                        <div class="flex gap-x-4">
+                            <span
+                                class="bg-sky-200 py-2 px-4 rounded-full hover:bg-sky-300 transition-all cursor-pointer active:bg-indigo-400">#Photography</span>
+                            <span
+                                class="bg-sky-200 py-2 px-4 rounded-full hover:bg-sky-300 transition-all cursor-pointer active:bg-indigo-400">#travel</span>
+                            <span
+                                class="bg-sky-200 py-2 px-4 rounded-full hover:bg-sky-300 transition-all cursor-pointer active:bg-indigo-400">#Winter</span>
+                        </div>
+                    </div>
+                </div>`
+        }
+        window.addEventListener('DOMContentLoaded', () => {
+            const myContainer = document.getElementById('card-container');
+            const array = [
+                {
+                    title:"The Coldest Sunset",
+                    img:"https://plus.unsplash.com/premium_photo-1719799241490-24e75327a17c?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                },
+                {
+                    title:"The Coldest Sunset",
+                    img:"https://plus.unsplash.com/premium_photo-1719799241490-24e75327a17c?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                },
+                {
+                    title:"The Coldest Sunset",
+                    img:"https://plus.unsplash.com/premium_photo-1719799241490-24e75327a17c?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                },
+                {
+                    title:"The Coldest Sunset",
+                    img:"https://plus.unsplash.com/premium_photo-1719799241490-24e75327a17c?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+            ]
+           array.forEach((card)=>{
+            myContainer.innerHTML += createCardHTML(card.img,card.title)
+           })
+
+            myContainer.innerHTML+= cardOne
+            myContainer.innerHTML+= cardTwo
+            myContainer.innerHTML+= cardThree
+            myContainer.innerHTML+= cardFour
+
+        });
+    </script>
 </head>
 
 <body class=" flex flex-col gap-y-12 bg-white-500">
@@ -38,8 +96,8 @@
                 Quibusdam, sunt saepe laudantium, dolor cumque iste, ullam debitis natus nobis ipsam quaerat et ab culpa
                 adipisci voluptates officia fugiat?</p>
 
-            <div class="flex gap-x-12 my-12 flex-wrap gap-y-6">
-                <div
+            <div class="flex gap-x-12 my-12 flex-wrap gap-y-6" id="card-container">
+                <!-- <div
                     class="flex-grow w-96 bg-stone-50 flex flex-col rounded-lg shadow-lg cursor-pointer  hover:scale-105 transition-all ">
                     <img class="rounded-t-lg"
                         src="https://plus.unsplash.com/premium_photo-1719799241490-24e75327a17c?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -107,7 +165,7 @@
                                 class="bg-sky-200 py-2 px-4 rounded-full hover:bg-sky-300 transition-all cursor-pointer active:bg-indigo-400">#Winter</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
             <p class="bg-stone-100 p-12 rounded-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
