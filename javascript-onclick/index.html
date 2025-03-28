@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript onclick</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
+
+        function useAlert() {
+            alert("Hello there")
+        }
+        function changeSecondButton() {
+            const secondButton = document.getElementById("second-Button")
+            if (secondButton.textContent == "No Click Me!") {
+                secondButton.textContent = "I have changed! Click me again to change back!"
+            } else {
+                secondButton.textContent = "No Click Me!"
+            }
+
+        }
+        function changeContent() {
+            const paragraph = document.getElementById("paragraph")
+            if (paragraph.style.backgroundColor === "blue") {
+                paragraph.innerHTML = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis atque suscipit, facere rem vitae ea. Autem adipisci repellat ut voluptas eos, ea ad, a magni sapiente voluptatem dolorum deleniti eligendi!"
+                paragraph.style.backgroundColor = ""
+                paragraph.style.color = ""
+            } else {
+                paragraph.innerHTML = "We just changed the paragraph!"
+                paragraph.style.backgroundColor = "blue"
+                paragraph.style.color = "white"
+                paragraph.style.padding = "5px"
+                paragraph.style.textAlign = "center"
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="p-4 flex justify-center gap-10">
+        <button
+            class="first-Button bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-all"
+            onclick="useAlert()">Click Me!</button>
+        <button
+            class="first-Button bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-all"
+            onclick="changeSecondButton()" id="second-Button">No Click Me!</button>
+        <button
+            class="first-Button bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 transition-all"
+            onclick="changeContent()">Don't Forget me!</button>
+    </div>
+    <p id="paragraph" class="text-center text-lg text-gray-800 p-6 bg-white rounded-lg shadow-lg max-w-prose mx-auto">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis atque suscipit, facere rem vitae ea. Autem
+        adipisci repellat ut voluptas eos, ea ad, a magni sapiente voluptatem dolorum deleniti eligendi!</p>
+</body>
+
+</html>
